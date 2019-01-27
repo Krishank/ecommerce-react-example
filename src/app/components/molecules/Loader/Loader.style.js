@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { styleConstants } from '../../../../styles'
 
 export default styled.div`
   position: fixed;
@@ -8,8 +9,7 @@ export default styled.div`
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.1);
   > div {
     display: block;
     position: absolute;
@@ -17,5 +17,13 @@ export default styled.div`
     left: 50%;
     margin-top: -50px;
     margin-left: -50px;
+    > div {
+      &:first-child {
+        background: ${styleConstants.green};
+      }
+      &:last-child {
+        background: ${styleConstants.red};
+      }
+    }
   }
 `
