@@ -1,1 +1,3 @@
-# ecommerce-react-example
+# AKQA Ecommerce Assignment
+
+Documentation Coming soon
