@@ -19,7 +19,7 @@ Please checkout to  [release-1](https://github.com/Krishank/ecommerce-react-exam
 
 - Accesability Report: [Product Listing Page](https://github.com/Krishank/ecommerce-react-example/blob/master/reports/achecker_2019-01-27_22-37-07.pdf)
 
-- W3C Html Validator: [Cliek Here]()
+- W3C Html Validator: [Cliek Here](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkrishank.github.io%2Fecommerce-react-example%2Fbuild%2Findex.html)
 
 ## Prerequisite
 
@@ -51,7 +51,7 @@ yarn (>=1.12.3) [Optional]
 
   
 
-This App has used husky, prettier to add checks on pre-commit and allow the auto fix of indentation. App is a Single page React App which has multiple product in product listing page and a size filter we can filter our products as per size.
+This App has used husky, prettier to add checks on pre-commit and allow the auto fix of indentation. It is a Single page React App which has multiple products and a size filter in product listing page with funcationality of filtering products as per size.
 
   
 
@@ -97,7 +97,7 @@ yarn start or npm start
 -  [ReactJs](https://reactjs.org/)
 -  [Redux (State Management)](https://redux.js.org/introduction/getting-started)
 -  [Redux SAGA](https://redux-saga.js.org/docs/introduction/BeginnerTutorial.html)
--  [YARN / NPM for package Dependencies](npmjs.com)
+-  [YARN / NPM for package Dependencies](https://npmjs.com)
 -  [ES6](http://es6-features.org/)
 -  [Style Component (for Component Style Reusability)](https://www.styled-components.com/)
 -  [Styled Grid (As a boot strap Grid)](https://www.npmjs.com/package/styled-bootstrap-grid)
