@@ -73,178 +73,90 @@ Please find the App Strcture Below
   
 
 ```
-
 src
-
 ├── app
-
-│ ├── App.js
-
-│ ├── ErrorBoundary.js
-
-│ ├── actions
-
-│ │ └── index.js
-
-│ ├── components
-
-│ │ ├── atoms
-
-│ │ │ ├── Heading
-
-│ │ │ │ └── Heading.js
-
-│ │ │ ├── Img
-
-│ │ │ │ └── Img.js
-
-│ │ │ ├── Selectbox
-
-│ │ │ │ ├── Selectbox.js
-
-│ │ │ │ └── Selectbox.style.js
-
-│ │ │ ├── Text
-
-│ │ │ │ ├── Text.js
-
-│ │ │ │ └── Text.style.js
-
-│ │ │ └── index.js
-
-│ │ ├── molecules
-
-│ │ │ ├── Loader
-
-│ │ │ │ ├── Loader.js
-
-│ │ │ │ └── Loader.style.js
-
-│ │ │ ├── Product
-
-│ │ │ │ ├── Product.js
-
-│ │ │ │ └── Product.style.js
-
-│ │ │ ├── Tag
-
-│ │ │ │ ├── Tag.js
-
-│ │ │ │ └── Tag.style.js
-
-│ │ │ └── index.js
-
-│ │ ├── organisms
-
-│ │ │ ├── filterHeader
-
-│ │ │ │ ├── FilterHeader.js
-
-│ │ │ │ └── FilterHeader.style.js
-
-│ │ │ ├── index.js
-
-│ │ │ └── productList
-
-│ │ │ ├── ProductList.js
-
-│ │ │ └── ProductList.styled.js
-
-│ │ └── templates
-
-│ │ └── ProductListingPage
-
-│ │ ├── ProductListingPage.actions.js
-
-│ │ ├── ProductListingPage.constants.js
-
-│ │ ├── ProductListingPage.helper.js
-
-│ │ ├── ProductListingPage.js
-
-│ │ ├── ProductListingPage.reducer.js
-
-│ │ └── index.js
-
-│ ├── reducers
-
-│ │ └── index.js
-
-│ ├── sagas
-
-│ │ └── rootSaga.js
-
-│ └── store.js
-
+│   ├── App.js
+│   ├── ErrorBoundary.js
+│   ├── actions
+│   │   └── index.js
+│   ├── components
+│   │   ├── atoms
+│   │   │   ├── Heading
+│   │   │   │   └── Heading.js
+│   │   │   ├── Img
+│   │   │   │   └── Img.js
+│   │   │   ├── Selectbox
+│   │   │   │   ├── Selectbox.js
+│   │   │   │   └── Selectbox.style.js
+│   │   │   ├── Text
+│   │   │   │   ├── Text.js
+│   │   │   │   └── Text.style.js
+│   │   │   └── index.js
+│   │   ├── molecules
+│   │   │   ├── Loader
+│   │   │   │   ├── Loader.js
+│   │   │   │   └── Loader.style.js
+│   │   │   ├── Product
+│   │   │   │   ├── Product.js
+│   │   │   │   └── Product.style.js
+│   │   │   ├── Tag
+│   │   │   │   ├── Tag.js
+│   │   │   │   └── Tag.style.js
+│   │   │   └── index.js
+│   │   ├── organisms
+│   │   │   ├── filterHeader
+│   │   │   │   ├── FilterHeader.js
+│   │   │   │   └── FilterHeader.style.js
+│   │   │   ├── index.js
+│   │   │   └── productList
+│   │   │       ├── ProductList.js
+│   │   │       └── ProductList.styled.js
+│   │   └── templates
+│   │       └── ProductListingPage
+│   │           ├── ProductListingPage.actions.js
+│   │           ├── ProductListingPage.constants.js
+│   │           ├── ProductListingPage.helper.js
+│   │           ├── ProductListingPage.js
+│   │           ├── ProductListingPage.reducer.js
+│   │           └── index.js
+│   ├── reducers
+│   │   └── index.js
+│   ├── sagas
+│   │   └── rootSaga.js
+│   └── store.js
 ├── assets
-
-│ └── images
-
-│ └── products
-
-│ ├── placeholder.png
-
-│ ├── product-1.jpg
-
-│ ├── product-2.jpg
-
-│ ├── product-3.jpg
-
-│ ├── product-4.jpg
-
-│ ├── product-5.jpg
-
-│ ├── product-6.jpg
-
-│ ├── product-7.jpg
-
-│ └── product-8.jpg
-
+│   └── images
+│       └── products
+│           ├── placeholder.png
+│           ├── product-1.jpg
+│           ├── product-2.jpg
+│           ├── product-3.jpg
+│           ├── product-4.jpg
+│           ├── product-5.jpg
+│           ├── product-6.jpg
+│           ├── product-7.jpg
+│           └── product-8.jpg
 ├── data
-
-│ ├── index.js
-
-│ ├── products.js
-
-│ └── size.js
-
+│   ├── index.js
+│   ├── products.js
+│   └── size.js
 ├── global
-
-│ ├── constants.js
-
-│ ├── index.js
-
-│ └── service.js
-
+│   ├── constants.js
+│   ├── index.js
+│   └── service.js
 ├── images
-
-│ └── index.js
-
+│   └── index.js
 ├── index.html
-
 ├── index.js
-
 ├── locale
-
-│ ├── index.js
-
-│ ├── locale.js
-
-│ └── sizeOptions.js
-
+│   ├── index.js
+│   ├── locale.js
+│   └── sizeOptions.js
 ├── styles
-
-│ ├── index.js
-
-│ └── styleConstants.js
-
+│   ├── index.js
+│   └── styleConstants.js
 └── utils
-
-└── index.js
-
-  
-  
-
+    └── index.js
 ```
 
   
