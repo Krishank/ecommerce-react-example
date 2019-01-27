@@ -154,9 +154,9 @@ Styled component has a very good documentation on its official website [https://
 
 Please see the below images for desktop and mobile view
 
- -  Desktop: ![ProductListingPage] (https://github.com/Krishank/ecommerce-react-example/blob/master/images/desktop.png?raw=true)
- (https://github.com/Krishank/ecommerce-react-example/blob/master/images/desktop-loading.png?raw=true)  
+ -  Desktop: ![ProductListingPage] (https://raw.githubusercontent.com/Krishank/ecommerce-react-example/master/images/desktop.png)
+ (https://raw.githubusercontent.com/Krishank/ecommerce-react-example/master/images/desktop-loading.png)  
 
  -  Mobile: ![ProductListingPage]  
- (https://github.com/Krishank/ecommerce-react-example/blob/master/images/mobile.jpeg?raw=true)
-  (https://github.com/Krishank/ecommerce-react-example/blob/master/images/mobile-loading.jpeg?raw=true)
+ (https://raw.githubusercontent.com/Krishank/ecommerce-react-example/master/images/mobile.jpeg)
+  (https://raw.githubusercontent.com/Krishank/ecommerce-react-example/master/images/mobile-loading.jpeg)
