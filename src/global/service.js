@@ -2,7 +2,7 @@
  * @desc services.js contains all the API URLs
  */
 
-const apiLocation = 'http://demo7175924.mockable.io'
+const apiLocation = 'https://demo7175924.mockable.io'
 
 export default {
   getProductsList: `${apiLocation}/get-products`,
