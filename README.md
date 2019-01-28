@@ -25,7 +25,7 @@
 
 ```
 
-- To get all products a mock API is hosted on [ /get-products ](https://demo7175924.mockable.io/get-products])
+- To get all products a mock API is hosted in (https://demo7175924.mockable.io/get-products)
 - Recommended Editor and settings: Visual Studio Code settings [Click Here](https://github.com/Krishank/ecommerce-react-example/blob/master/docs/DevelopmentTools.md)
 
   
