@@ -14,7 +14,10 @@
   },
   "lint-staged": {
     "*.{js,jsx,css}": [
-      
+      "prettier --write --single-quote",
+      "eslint --fix",
+      "stylelint './src/**/*.js'",
+      "git add"
     ]
   },
   "license": "MIT",

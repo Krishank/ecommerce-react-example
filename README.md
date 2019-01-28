@@ -4,14 +4,9 @@
   
 
 # E-commerce Product Listing Page
-
   
 
-Please checkout to  [release-1](https://github.com/Krishank/ecommerce-react-example/tree/release-1) branch for Latest code.
-
-  
-
-# Working App
+## Working App
 
   
 
@@ -231,8 +226,8 @@ A predictable state container for JavaScript apps.
 
 - Predictable: Redux helps you write applications that behave consistently
 - Centralized: Single Source of truth
-- Debuggable: There are many tolls in this app I have used Redux Dev Tool.
-- Flexible: We can use it with any other view library
+- Debuggable:  There are various tools available to debug react redux application but it is recomanded to use Redux Dev Tool it provides various rich features like track actions, and live state of redux store 
+- Flexible: it can be used with any other UI framework
 
   
 
@@ -242,7 +237,7 @@ A predictable state container for JavaScript apps.
 
   
 
-Styled components provide a flexibility to write Js in Css which help a lot in a component based development. I found it very useful and predictable as this approach provide a flexibility to write the test cases for your css which eliminate any ambiguity (Now there is no need for Tester to write pixel testing) and so many other limitations of css
+Styled components provide a flexibility to write Js in Css which help a lot in a component based development. It it very useful and predictable approach as this provides a flexibility to write the test cases for css which eliminates any ambiguity (Now there is no need for Tester to write pixel testing) and so many other limitations of css.
 
   
 
@@ -266,13 +261,13 @@ Please see the below images for desktop and mobile view
 
   
 
-- Desktop View Without Loading![Product Listing Page Desktop](https://raw.githubusercontent.com/Krishank/ecommerce-react-example/docs/master/images/desktop.png)
+## Product Listing Desktop View ![Product Listing Page Desktop](https://raw.githubusercontent.com/Krishank/ecommerce-react-example/master/docs/images/desktop.png)
 
   
 
   
 
-- Desktop View With Loading
+## Product Listing Desktop View With Loading
 
   
 
@@ -286,13 +281,13 @@ Please see the below images for desktop and mobile view
 
   
 
-- Mobile View without Loading![Product Listing Page Mobile](https://raw.githubusercontent.com/Krishank/ecommerce-react-example/master/docs/images/mobile.jpeg)
+## Product Listing Mobile View ![Product Listing Page Mobile](https://raw.githubusercontent.com/Krishank/ecommerce-react-example/master/docs/images/mobile.jpeg)
 
   
 
   
 
-- Mobile With Loading
+# Product Listing Mobile With Loading
 
   
 
