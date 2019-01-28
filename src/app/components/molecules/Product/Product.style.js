@@ -12,10 +12,6 @@ export default styled.li`
   margin-left: -1px;
   margin-top: -1px;
   padding: 20px 5px;
-  .product-sale {
-  }
-  .product-exclusive {
-  }
   img {
     width: 100%;
     min-height: 280px;
@@ -30,8 +26,6 @@ export default styled.li`
     }
     &-name {
       max-width: 170px;
-    }
-    &-product-price {
     }
   }
 `

@@ -1,6 +1,6 @@
 {
   "parser": "babel-eslint",
-  "plugins": ["react", "jest", "prettier", "jsx-a11y"],
+  "plugins": ["react", "prettier", "jsx-a11y"],
   "extends": ["airbnb","eslint:recommended",
     "plugin:react/recommended",
     "plugin:jsx-a11y/recommended"],
@@ -37,11 +37,6 @@
         }
       }
     ],
-    "jest/no-disabled-tests": "warn",
-    "jest/no-focused-tests": "error",
-    "jest/no-identical-title": "error",
-    "jest/prefer-to-have-length": "warn",
-    "jest/valid-expect": "error",
     "react/require-default-props": 0,
     "object-shorthand": [1, "properties"],
     "max-len": 0,
@@ -82,7 +77,6 @@
   },
   "env": {
     "es6": true,
-    "jest": true,
     "browser": true,
     "node": true
   }
