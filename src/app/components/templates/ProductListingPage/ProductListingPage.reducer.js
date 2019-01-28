@@ -40,7 +40,6 @@ const ProductListingPageReducer = (state = intialState, action) => {
       break
 
     case DISPLAY_LOADER:
-      console.log('action', action.isLoading)
       state = {
         ...state,
         isLoading: action.isLoading,
@@ -48,7 +47,6 @@ const ProductListingPageReducer = (state = intialState, action) => {
       break
 
     case HIDE_LOADER:
-      console.log('action2', action)
       state = {
         ...state,
         isLoading: action.isLoading,
