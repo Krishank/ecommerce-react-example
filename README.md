@@ -16,7 +16,7 @@ Please checkout to  [release-1](https://github.com/Krishank/ecommerce-react-exam
   
 
 - Open the App: [Product Listing Page](https://krishank.github.io/ecommerce-react-example/build/index.html)
-- Accesability Report: [Product Listing Page](https://github.com/Krishank/ecommerce-react-example/blob/master/reports/achecker_2019-01-27_22-37-07.pdf)
+- Accesability Report: [Product Listing Page](https://github.com/Krishank/ecommerce-react-example/blob/master/docs/reports/achecker_2019-01-27_22-37-07.pdf)
 - W3C Html Validator: [Click Here](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkrishank.github.io%2Fecommerce-react-example%2Fbuild%2Findex.html)
 
 ## Prerequisite
@@ -30,8 +30,8 @@ Please checkout to  [release-1](https://github.com/Krishank/ecommerce-react-exam
 
 ```
 
-- To get all products a mock API is hosted on [/get-products](https://demo7175924.mockable.io/get-products])
-- Recommended Editor and settings: Visual Studio Code settings [Click Here](https://github.com/Krishank/ecommerce-react-example/blob/master/DevelopmentTools.md)
+- To get all products a mock API is hosted on [ /get-products ](https://demo7175924.mockable.io/get-products])
+- Recommended Editor and settings: Visual Studio Code settings [Click Here](https://github.com/Krishank/ecommerce-react-example/blob/master/docs/DevelopmentTools.md)
 
   
 
@@ -266,7 +266,7 @@ Please see the below images for desktop and mobile view
 
   
 
-- Desktop View Without Loading![Product Listing Page Desktop](https://raw.githubusercontent.com/Krishank/ecommerce-react-example/master/images/desktop.png)
+- Desktop View Without Loading![Product Listing Page Desktop](https://raw.githubusercontent.com/Krishank/ecommerce-react-example/docs/master/images/desktop.png)
 
   
 
@@ -278,7 +278,7 @@ Please see the below images for desktop and mobile view
 
   
 
-![Product Listing Page Desktop Loader](https://raw.githubusercontent.com/Krishank/ecommerce-react-example/master/images/desktop-loading.png)
+![Product Listing Page Desktop Loader](https://raw.githubusercontent.com/Krishank/ecommerce-react-example/master/docs/images/desktop-loading.png)
 
   
 
@@ -286,7 +286,7 @@ Please see the below images for desktop and mobile view
 
   
 
-- Mobile View without Loading![Product Listing Page Mobile](https://raw.githubusercontent.com/Krishank/ecommerce-react-example/master/images/mobile.jpeg)
+- Mobile View without Loading![Product Listing Page Mobile](https://raw.githubusercontent.com/Krishank/ecommerce-react-example/master/docs/images/mobile.jpeg)
 
   
 
@@ -296,4 +296,4 @@ Please see the below images for desktop and mobile view
 
   
 
-![Product Listing Page Desktop Loader](https://raw.githubusercontent.com/Krishank/ecommerce-react-example/master/images/mobile-loading.jpeg)
+![Product Listing Page Desktop Loader](https://raw.githubusercontent.com/Krishank/ecommerce-react-example/master/docs/images/mobile-loading.jpeg)
