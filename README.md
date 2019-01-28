@@ -16,31 +16,21 @@ Please checkout to  [release-1](https://github.com/Krishank/ecommerce-react-exam
   
 
 - Open the App: [Product Listing Page](https://krishank.github.io/ecommerce-react-example/build/index.html)
-
 - Accesability Report: [Product Listing Page](https://github.com/Krishank/ecommerce-react-example/blob/master/reports/achecker_2019-01-27_22-37-07.pdf)
-
-- W3C Html Validator: [Cliek Here](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkrishank.github.io%2Fecommerce-react-example%2Fbuild%2Findex.html)
+- W3C Html Validator: [Click Here](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkrishank.github.io%2Fecommerce-react-example%2Fbuild%2Findex.html)
 
 ## Prerequisite
 
-  
+```
+
+    Node Js (>= v8.12.0)
+    NPM (>=6.4.1)
+    git (>=2.15.2)
+    yarn (>=1.12.3) [Optional]
+
+```
 
 - To get all products a mock API is hosted on [/get-products](https://demo7175924.mockable.io/get-products])
-
-  
-
-```
-
-Node Js (>= v8.12.0)
-NPM (>=6.4.1)
-git (>=2.15.2)
-yarn (>=1.12.3) [Optional]
-
-```
-
-  
-  
-
 - Recommended Editor and settings: Visual Studio Code settings [Click Here](https://github.com/Krishank/ecommerce-react-example/blob/master/DevelopmentTools.md)
 
   
@@ -51,7 +41,7 @@ yarn (>=1.12.3) [Optional]
 
   
 
-This App has used husky, prettier to add checks on pre-commit and allow the auto fix of indentation. It is a Single page React App which has multiple products and a size filter in product listing page with funcationality of filtering products as per size.
+This App is using multiple dev tools like husky, prettier, ESlint, style-lint to insure code quality before user commit the code It is a Single page React App which has multiple products and a size filter in product listing page with funcationality of filtering products as per size.
 
   
 
@@ -59,15 +49,12 @@ This App has used husky, prettier to add checks on pre-commit and allow the auto
 
 {
 
-"start": "cross-env NODE_ENV=development webpack-dev-server --open",
-
-"build": "cross-env NODE_ENV=production webpack",
-
-"format": "prettier --write 'src/**/*.js'",
-
-"test": "jest --watchAll --coverage",
-
-"precommit": "lint-staged"
+    "start": "cross-env NODE_ENV=development webpack-dev-server --open",
+    "build": "cross-env NODE_ENV=production webpack",
+    "format": "prettier --write 'src/**/*.js'",
+    "lint:css": "stylelint './src/**/*.style.js'",
+    "test": "jest --watchAll --coverage",
+    "precommit": "lint-staged"
 
 }
 
@@ -79,13 +66,12 @@ This App has used husky, prettier to add checks on pre-commit and allow the auto
 
   
 
-  
-
 ```
 git clone https://github.com/Krishank/ecommerce-react-example.git
 cd ecommerce-react-example
 Yarn install or npm install
 yarn start or npm start
+
 ```
 
   
@@ -310,4 +296,4 @@ Please see the below images for desktop and mobile view
 
   
 
-![Product Listing Page Desktop Loader](https://raw.githubusercontent.com/Krishank/ecommerce-react-example/master/images/mobile-loading.jpeg)g
+![Product Listing Page Desktop Loader](https://raw.githubusercontent.com/Krishank/ecommerce-react-example/master/images/mobile-loading.jpeg)
