@@ -1,7 +1,7 @@
 {
-  "name": "akqa-assignment-app",
+  "name": "ecommerce-react-example-app",
   "version": "1.0.0",
-  "description": "AKQA Assignment App",
+  "description": "Ecommerce React Example App",
   "repository": "https://github.com/Krishank/ecommerce-react-example.git",
   "author": "Krishank Dwivedi",
   "main": "index.js",
