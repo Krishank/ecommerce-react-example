@@ -24,36 +24,36 @@ const intialState = {
 
 const ProductListingPageReducer = (state = intialState, action) => {
   switch (action.type) {
-    case LOAD_PRODUCTS_SUCCESS:
-      state = {
-        ...state,
-        allProducts: action.products,
-        isLoading: action.isLoading,
-      }
-      break
+  case LOAD_PRODUCTS_SUCCESS:
+    state = {
+      ...state,
+      allProducts: action.products,
+      isLoading: action.isLoading,
+    }
+    break
 
-    case APPLY_FILTER:
-      state = {
-        ...state,
-        filterApplied: action.filterApplied,
-      }
-      break
+  case APPLY_FILTER:
+    state = {
+      ...state,
+      filterApplied: action.filterApplied,
+    }
+    break
 
-    case DISPLAY_LOADER:
-      state = {
-        ...state,
-        isLoading: action.isLoading,
-      }
-      break
+  case DISPLAY_LOADER:
+    state = {
+      ...state,
+      isLoading: action.isLoading,
+    }
+    break
 
-    case HIDE_LOADER:
-      state = {
-        ...state,
-        isLoading: action.isLoading,
-      }
-      break
+  case HIDE_LOADER:
+    state = {
+      ...state,
+      isLoading: action.isLoading,
+    }
+    break
 
-    default:
+  default:
   }
 
   return state
