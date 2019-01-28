@@ -72,9 +72,9 @@ ProductListingPage.defaultProps = {
 }
 
 ProductListingPage.propTypes = {
-  allProducts: PropTypes.array.isRequired,
+  allProducts: PropTypes.arrayOf(PropTypes.object).isRequired,
   filterApplied: PropTypes.arrayOf(PropTypes.object).isRequired,
-  applyFilter: PropTypes.func,
+  applyFilter: PropTypes.func, // eslint-disable-line react/no-unused-prop-types
   isLoading: PropTypes.bool,
 }
 
@@ -100,4 +100,4 @@ export default connect(
   mapDispatchToProps
 )(ProductListingPage)
 
-export { ProductListingPage }
+export { ProductListingPage } // eslint-disable-line import/no-named-as-default

@@ -17,13 +17,12 @@ export function getSelectedFilterValue(activeFilters, filterType) {
 }
 
 export function getUpdateListOfProducts(productList, filterValue) {
-  let filteredListOfProducts
   if (filterValue === '' || filterValue === 'Filter by size') {
     return productList
   } else {
-    return (filteredListOfProducts = productList.filter(productList =>
+    return productList.filter(productList =>
       productList.size.includes(filterValue)
-    ))
+    )
   }
 }
 
