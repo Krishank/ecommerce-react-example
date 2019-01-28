@@ -7,6 +7,11 @@ import {
   HIDE_LOADER,
 } from './ProductListingPage.constants'
 
+import {
+  getUpdateListOfProducts,
+  updateAppliedFilter,
+} from './ProductListingPage.helper'
+
 const intialStateOfSizeFilter =
   locale && locale.productListingPage.sizeFilterlabel
 
@@ -18,40 +23,57 @@ const filterApplied = [
 ]
 const intialState = {
   allProducts: [],
+  filteredProducts: [],
   filterApplied,
   isLoading: false,
 }
 
 const ProductListingPageReducer = (state = intialState, action) => {
   switch (action.type) {
-  case LOAD_PRODUCTS_SUCCESS:
+  case LOAD_PRODUCTS_SUCCESS: {
     state = {
       ...state,
       allProducts: action.products,
+      filteredProducts: action.products,
+    }
+    break
+  }
+
+  case APPLY_FILTER: {
+    const { allProducts, filterApplied } = state
+    const { changedOption, filterType } = action
+    const updatedFilters = updateAppliedFilter(
+      filterApplied,
+      filterType,
+      changedOption
+    )
+    const filteredProducts = getUpdateListOfProducts(
+      allProducts,
+      changedOption
+    )
+    state = {
+      ...state,
+      filteredProducts,
+      filterApplied: updatedFilters,
+    }
+    break
+  }
+
+  case DISPLAY_LOADER: {
+    state = {
+      ...state,
       isLoading: action.isLoading,
     }
     break
+  }
 
-  case APPLY_FILTER:
-    state = {
-      ...state,
-      filterApplied: action.filterApplied,
-    }
-    break
-
-  case DISPLAY_LOADER:
+  case HIDE_LOADER: {
     state = {
       ...state,
       isLoading: action.isLoading,
     }
     break
-
-  case HIDE_LOADER:
-    state = {
-      ...state,
-      isLoading: action.isLoading,
-    }
-    break
+  }
 
   default:
   }

@@ -21,10 +21,11 @@ export function loadProductsSuccess(products) {
 }
 
 export function applyFilter(state) {
-  const { filterApplied } = state
+  const { changedOption, filterType } = state
   return {
     type: APPLY_FILTER,
-    filterApplied,
+    changedOption,
+    filterType,
   }
 }
 
