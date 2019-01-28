@@ -10,11 +10,7 @@ import { ErrorBoundary } from '../../../ErrorBoundary'
  * to Filter Header and Product List Component
  */
 
-import {
-  getSelectedFilterValue,
-  getUpdateListOfProducts,
-  updateAppliedFilter,
-} from './ProductListingPage.helper'
+import { getSelectedFilterValue } from './ProductListingPage.helper'
 
 import { applyFilter } from './ProductListingPage.actions'
 import { ProductList, FilterHeader } from '../../organisms'
@@ -24,25 +20,17 @@ import { locale, sizeOptions } from '../../../../locale'
 const { filterHeaderError, productListError } = locale.errors
 
 const filterProductsData = ({ changedOption }, props) => {
-  const { allProducts, filterApplied } = props
-
-  // TO DO: Write a seprate helper to update applied filter status as multiple filter can be added
-  const updatedFilters = updateAppliedFilter(
-    filterApplied,
-    FILTER_TYPE_SIZE,
-    changedOption
-  )
+  // TODO: Selected filter should send its type
   props.applyFilter({
-    allProducts,
-    filterApplied: updatedFilters,
+    changedOption,
+    filterType: FILTER_TYPE_SIZE,
   })
 }
 
 const ProductListingPage = React.memo(function ProductListingPage(props) {
-  const { allProducts, filterApplied, isLoading } = props
+  const { filteredProducts, filterApplied, isLoading } = props
   const selectedValue = getSelectedFilterValue(filterApplied, FILTER_TYPE_SIZE)
 
-  const filterProducts = getUpdateListOfProducts(allProducts, selectedValue)
   return (
     <Fragment>
       {isLoading && <Loader />}
@@ -60,7 +48,7 @@ const ProductListingPage = React.memo(function ProductListingPage(props) {
 
       <Row>
         <ErrorBoundary erroMessage={productListError}>
-          <ProductList products={filterProducts} />
+          <ProductList products={filteredProducts} />
         </ErrorBoundary>
       </Row>
     </Fragment>
@@ -72,7 +60,7 @@ ProductListingPage.defaultProps = {
 }
 
 ProductListingPage.propTypes = {
-  allProducts: PropTypes.arrayOf(PropTypes.object).isRequired,
+  filteredProducts: PropTypes.arrayOf(PropTypes.object).isRequired,
   filterApplied: PropTypes.arrayOf(PropTypes.object).isRequired,
   applyFilter: PropTypes.func, // eslint-disable-line react/no-unused-prop-types
   isLoading: PropTypes.bool,
@@ -81,7 +69,7 @@ ProductListingPage.propTypes = {
 const mapStateToProps = state => {
   // improve
   return {
-    allProducts: state.ProductListingPageReducer.allProducts,
+    filteredProducts: state.ProductListingPageReducer.filteredProducts,
     isLoading: state.ProductListingPageReducer.isLoading,
     filterApplied: state.ProductListingPageReducer.filterApplied,
   }
