@@ -1,4 +1,4 @@
-## Editot & Plugins (Editor Extensions)
+## Editor & Plugins (Editor Extensions)
 
 ### VS Code
 
